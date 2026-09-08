@@ -40,3 +40,10 @@ The API Gateway acts as the entry point between clients and the microservices ec
                     │ Service :8083   │
                     └─────────────────┘
 ```
+
+## 🚀 Features
+
+* API Gateway using Spring Cloud Gateway
+* Centralized request routing
+
+
