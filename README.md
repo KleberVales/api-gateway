@@ -53,7 +53,9 @@ The API Gateway acts as the entry point between clients and the microservices ec
 * Fallback responses when services are unavailable
 * Retry configuration for the authentication service
 * CORS configuration
-
+* Spring Boot Actuator
+* Gradle build
+* Java 21
 
 
 
