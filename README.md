@@ -298,6 +298,58 @@ Credentials are also enabled.
 
 For production, the allowed origins should be restricted to the application's trusted frontend domains.
 
+# 📊 Actuator
+
+Spring Boot Actuator is enabled for operational endpoints.
+
+Configured exposure:
+
+```text
+health
+info
+gateway
+```
+
+The Gateway endpoint is also enabled for Spring Cloud Gateway management information.
+
+The health endpoint can be accessed through:
+
+```text
+GET /actuator/health
+```
+
+
+# 📁 Project Structure
+
+```text
+src/
+└── main/
+    ├── java/
+    │   └── com/
+    │       └── kvales/
+    │           └── gateway/
+    │               ├── config/
+    │               │   ├── GatewayConfig.java
+    │               │   └── SecurityConfig.java
+    │               │
+    │               ├── controller/
+    │               │   ├── FallbackController.java
+    │               │   └── RateLimiterConfig.java
+    │               │
+    │               ├── filter/
+    │               │   └── JwtAuthenticationFilter.java
+    │               │
+    │               ├── util/
+    │               │   └── JwtUtil.java
+    │               │
+    │               └── ApiGatewayApplication.java
+    │
+    └── resources/
+        └── application.properties
+```
+
+The current source structure separates Gateway configuration, security configuration, filters, controllers and JWT utilities.
+
 
 
 
