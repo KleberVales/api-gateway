@@ -98,6 +98,11 @@ API Gateway :8080
 Nutrition Service :8083
 ```
 
+The routes are configured both through `application.properties` and programmatically through `GatewayConfig`.
+
+
+
+
 
 
 
