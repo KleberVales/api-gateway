@@ -217,6 +217,16 @@ The Gateway configuration defines fallback endpoints such as:
 
 The fallback controller returns an HTTP 503 response with a status, message and timestamp.
 
+### Example fallback response
+
+```json
+{
+  "status": 503,
+  "message": "Nutrition Service is currently unavailable",
+  "timestamp": 1720000000000
+}
+```
+
 
 
 
