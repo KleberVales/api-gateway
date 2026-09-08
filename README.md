@@ -273,6 +273,31 @@ Authenticated request
 
 This provides a foundation for identifying clients when applying Gateway rate-limiting policies.
 
+# 🌐 CORS
+
+CORS is configured for local frontend applications.
+
+Currently allowed origins include:
+
+```text
+http://localhost:3000
+http://localhost:4200
+```
+
+Allowed HTTP methods:
+
+```text
+GET
+POST
+PUT
+DELETE
+OPTIONS
+```
+
+Credentials are also enabled.
+
+For production, the allowed origins should be restricted to the application's trusted frontend domains.
+
 
 
 
