@@ -170,6 +170,12 @@ spring.security.jwt.expiration=86400000
 
 For production environments, configure `JWT_SECRET` through a secure secret-management mechanism instead of relying on the default value.
 
+# 🛡️ Circuit Breaker
+
+The Gateway uses Resilience4j through Spring Cloud Circuit Breaker.
+
+Each backend service has a Circuit Breaker and a fallback endpoint.
+
 
 
 
