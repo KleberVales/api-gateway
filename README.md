@@ -199,6 +199,15 @@ Circuit Breaker
         HTTP 503
 ```
 
+Configured services:
+
+```text
+authServiceCB
+userServiceCB
+nutritionServiceCB
+```
+
+
 
 
 
