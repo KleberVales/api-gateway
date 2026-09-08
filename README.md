@@ -176,6 +176,29 @@ The Gateway uses Resilience4j through Spring Cloud Circuit Breaker.
 
 Each backend service has a Circuit Breaker and a fallback endpoint.
 
+```text
+Client
+   │
+   ▼
+API Gateway
+   │
+   ▼
+Circuit Breaker
+   │
+   ├── Service available
+   │       │
+   │       ▼
+   │   Backend Service
+   │
+   └── Service unavailable
+           │
+           ▼
+       Fallback
+           │
+           ▼
+        HTTP 503
+```
+
 
 
 
