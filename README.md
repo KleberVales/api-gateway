@@ -106,6 +106,35 @@ The Gateway validates JWT tokens before forwarding protected requests.
 
 The authentication flow is:
 
+```text
+Client
+   │
+   │ Authorization: Bearer <JWT>
+   ▼
+API Gateway
+   │
+   ├── Is endpoint public?
+   │       │
+   │       ├── Yes ──► Forward request
+   │       │
+   │       └── No
+   │
+   ├── Extract JWT
+   │
+   ├── Validate signature
+   │
+   ├── Validate expiration
+   │
+   ├── Extract username
+   │
+   ├── Extract roles
+   │
+   └── Forward request
+            │
+            ▼
+       Microservice
+```
+
 
 
 
