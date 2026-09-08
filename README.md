@@ -159,6 +159,17 @@ X-User-Roles: USER,ADMIN
 
 This allows downstream microservices to consume authenticated user information without implementing the initial authentication flow themselves.
 
+## JWT Configuration
+
+JWT configuration is provided through environment variables:
+
+```properties
+spring.security.jwt.secret=${JWT_SECRET:your-very-secure-jwt-secret-key-for-production}
+spring.security.jwt.expiration=86400000
+```
+
+For production environments, configure `JWT_SECRET` through a secure secret-management mechanism instead of relying on the default value.
+
 
 
 
