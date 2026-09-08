@@ -72,6 +72,7 @@ The API Gateway acts as the entry point between clients and the microservices ec
 | Gradle               | Build automation                |
 | Lombok               | Boilerplate reduction           |
 
+The project uses Java 21 and Spring Boot 3.2.4, with Spring Cloud Gateway, Spring Security, JJWT, Actuator and Resilience4j dependencies.
 
 
 
