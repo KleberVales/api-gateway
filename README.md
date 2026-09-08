@@ -74,6 +74,10 @@ The API Gateway acts as the entry point between clients and the microservices ec
 
 The project uses Java 21 and Spring Boot 3.2.4, with Spring Cloud Gateway, Spring Security, JJWT, Actuator and Resilience4j dependencies.
 
+# 🔀 Request Routing
+
+The Gateway exposes a unified API while internally forwarding requests to the appropriate microservice.
+
 
 
 
