@@ -66,5 +66,14 @@ The API Gateway acts as the entry point between clients and the microservices ec
 | Spring Cloud Gateway | API Gateway and request routing |
 | Spring Security      | Security configuration          |
 | JWT                  | Authentication                  |
+| JJWT                 | JWT parsing and validation      |
+| Resilience4j         | Circuit Breaker                 |
+| Spring Boot Actuator | Monitoring and management       |
+| Gradle               | Build automation                |
+| Lombok               | Boilerplate reduction           |
+
+
+
+
 
 
