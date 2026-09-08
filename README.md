@@ -45,5 +45,8 @@ The API Gateway acts as the entry point between clients and the microservices ec
 
 * API Gateway using Spring Cloud Gateway
 * Centralized request routing
-
+* JWT authentication
+* Public and protected endpoints
+* JWT claim extraction
+* User information propagation to downstream services
 
