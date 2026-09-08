@@ -148,6 +148,17 @@ The following endpoints are configured as public:
 
 All other requests require authentication.
 
+## JWT Headers
+
+After successful authentication, the Gateway propagates user information to downstream services:
+
+```http
+X-User-Id: user@example.com
+X-User-Roles: USER,ADMIN
+```
+
+This allows downstream microservices to consume authenticated user information without implementing the initial authentication flow themselves.
+
 
 
 
