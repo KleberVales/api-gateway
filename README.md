@@ -100,6 +100,12 @@ Nutrition Service :8083
 
 The routes are configured both through `application.properties` and programmatically through `GatewayConfig`.
 
+# 🔐 Authentication
+
+The Gateway validates JWT tokens before forwarding protected requests.
+
+The authentication flow is:
+
 
 
 
