@@ -78,6 +78,15 @@ The project uses Java 21 and Spring Boot 3.2.4, with Spring Cloud Gateway, Sprin
 
 The Gateway exposes a unified API while internally forwarding requests to the appropriate microservice.
 
+| Gateway Route       | Downstream Service |   Port |
+| ------------------- | ------------------ | -----: |
+| `/api/auth/**`      | Auth Service       | `8081` |
+| `/api/users/**`     | User Service       | `8082` |
+| `/api/nutrition/**` | Nutrition Service  | `8083` |
+
+
+
+
 
 
 
