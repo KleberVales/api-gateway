@@ -49,4 +49,11 @@ The API Gateway acts as the entry point between clients and the microservices ec
 * Public and protected endpoints
 * JWT claim extraction
 * User information propagation to downstream services
+* Circuit Breaker with Resilience4j
+* Fallback responses when services are unavailable
+* Retry configuration for the authentication service
+* CORS configuration
+
+
+
 
