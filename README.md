@@ -207,6 +207,16 @@ userServiceCB
 nutritionServiceCB
 ```
 
+The Gateway configuration defines fallback endpoints such as:
+
+```text
+/fallback/auth
+/fallback/users
+/fallback/nutrition
+```
+
+The fallback controller returns an HTTP 503 response with a status, message and timestamp.
+
 
 
 
