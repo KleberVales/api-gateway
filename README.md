@@ -135,6 +135,19 @@ API Gateway
        Microservice
 ```
 
+The `JwtAuthenticationFilter` is implemented as a Spring Cloud Gateway `GlobalFilter`. It checks the `Authorization` header, validates the token, extracts the username and roles, and adds them to downstream request headers.
+
+The following endpoints are configured as public:
+
+```text
+/api/auth/login
+/api/auth/register
+/api/auth/refresh-token
+/actuator/health
+```
+
+All other requests require authentication.
+
 
 
 
