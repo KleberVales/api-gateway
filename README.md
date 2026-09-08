@@ -227,6 +227,31 @@ The fallback controller returns an HTTP 503 response with a status, message and 
 }
 ```
 
+# 🔁 Retry
+
+The authentication route also contains a retry configuration.
+
+The Gateway can retry requests up to three times when the authentication service responds with `503 Service Unavailable`.
+
+```text
+Client
+   │
+   ▼
+API Gateway
+   │
+   ▼
+Auth Service
+   │
+   ├── 503
+   │
+   ├── Retry 1
+   │
+   ├── Retry 2
+   │
+   └── Retry 3
+```
+
+
 
 
 
