@@ -84,7 +84,19 @@ The Gateway exposes a unified API while internally forwarding requests to the ap
 | `/api/users/**`     | User Service       | `8082` |
 | `/api/nutrition/**` | Nutrition Service  | `8083` |
 
+For example:
 
+```text
+Client
+  │
+  │ GET /api/nutrition/daily
+  ▼
+API Gateway :8080
+  │
+  │ Route
+  ▼
+Nutrition Service :8083
+```
 
 
 
