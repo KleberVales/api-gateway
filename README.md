@@ -251,6 +251,28 @@ Auth Service
    └── Retry 3
 ```
 
+# 🚦 Rate Limiting
+
+The project contains a `KeyResolver` configuration for Gateway rate limiting.
+
+The resolver identifies the client using:
+
+1. `X-User-Id`, when available
+2. Client IP address as a fallback
+
+```text
+Authenticated request
+        │
+        ▼
+   X-User-Id
+        │
+        ├── exists ──► use user ID
+        │
+        └── absent ──► use client IP
+```
+
+This provides a foundation for identifying clients when applying Gateway rate-limiting policies.
+
 
 
 
