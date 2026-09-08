@@ -57,5 +57,14 @@ The API Gateway acts as the entry point between clients and the microservices ec
 * Gradle build
 * Java 21
 
+## 🛠️ Technologies
+
+| Technology           | Purpose                         |
+| -------------------- | ------------------------------- |
+| Java 21              | Programming language            |
+| Spring Boot 3.2.4    | Application framework           |
+| Spring Cloud Gateway | API Gateway and request routing |
+| Spring Security      | Security configuration          |
+| JWT                  | Authentication                  |
 
 
