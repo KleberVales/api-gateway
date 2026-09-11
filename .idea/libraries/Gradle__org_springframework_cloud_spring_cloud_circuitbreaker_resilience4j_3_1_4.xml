@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.cloud:spring-cloud-circuitbreaker-resilience4j:3.1.4" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.springframework.cloud" artifactId="spring-cloud-circuitbreaker-resilience4j" version="3.1.4" baseVersion="3.1.4" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-circuitbreaker-resilience4j/3.1.4/724ea9025468a2b6c52bdf43dbb27631bd5b655c/spring-cloud-circuitbreaker-resilience4j-3.1.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-circuitbreaker-resilience4j/3.1.4/5ebce584da89a5d7022e80fec3f39e770f72913/spring-cloud-circuitbreaker-resilience4j-3.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
