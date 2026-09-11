@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -42,6 +43,7 @@ public class JwtUtil {
     }
 
     public List<String> extractRoles(String token) {
-        return extractAllClaims(token).get("roles", List.class);
+        List<String> roles = extractAllClaims(token).get("roles", List.class);
+        return roles != null ? roles : Collections.emptyList();
     }
 }
