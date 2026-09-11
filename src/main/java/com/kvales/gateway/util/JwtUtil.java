@@ -13,7 +13,7 @@ import java.util.List;
 @Component
 public class JwtUtil {
 
-    @Value("${spring.security.jwt.secret}")
+    @Value("${jwt.secret}")
     private String secret;
 
     private SecretKey getSigningKey() {
